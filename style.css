@@ -89,7 +89,7 @@
 	}
 }
 .btn{
-	padding:5px;
+	padding:5px 15px;
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
@@ -142,7 +142,7 @@ border:3px solid  #D5B195;
 }
 .btn1{
 	margin-top:20px;
-	padding:5px;
+	padding:5px 15px;
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
@@ -234,21 +234,21 @@ animation-duration:2.5s;
 
 .formname{
 	width:500px;
-	height:20px;
+	height:15px;
 	margin-top:10px;
 	padding:10px;
 	border-radius:20px;
 }
 .formemail{
 	width:500px;
-	height:20px;
+	height:15px;
 	margin-top:10px;
 	padding:10px;
 	border-radius:20px;
 }
 .message{
 	width:500px;
-	height:100px;
+	height:90px;
 	margin-top:10px;
 	padding:10px;
 	border-radius:20px;
@@ -264,31 +264,31 @@ animation-duration:2.5s;
 }
 .btn2{
 	margin-top:20px;
-	padding:5px;
+	padding:5px 15px;
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
 }
 .web{
 	color:lightblue;
-	margin-top:5px;
 }
+
 .crow{
 	color:red;
-	margin-top:5px;
-}
+	}
+	
 .case{
 	color:lightgray;
-	margin-top:5px;
-}
+	}
+	
 .camera{
 	color:orange;
-	margin-top:5px;
-}
+	}
+	
 .lap{
 	color:lightblue;
-	margin-top:5px;
-}
+	}
+	
 .foot{
 	background-color: #714423;
 	display:flex;
@@ -296,7 +296,7 @@ animation-duration:2.5s;
 .nav1{
 	display:flex;
 	flex-direction:column;
-
+     padding:15px;
 }
 #abo{
 	border-bottom:2px solid #D5B195; 
@@ -325,6 +325,8 @@ animation-duration:2.5s;
 }
 .follow1{
 	color:white;
+	padding:3px;
+	
 }
 
 .lastline{
@@ -340,4 +342,8 @@ animation-duration:2.5s;
 body{
 	display:flex;
 	flex-wrap:wrap;
+}
+
+#last-about{
+	padding:15px;
 }
