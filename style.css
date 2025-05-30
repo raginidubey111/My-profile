@@ -1,13 +1,18 @@
 *{
 	margin:0;
 	padding:0;
+	box-sizing:border-box;
 }
 
+.main {
+	max-width:100vw;
+}
 .header{
 	background-color:#714423;
-	padding:20px;
+	padding:20px 30px;
 	display:flex;
 	justify-content:space-between; 
+
 }
 
 
@@ -31,7 +36,7 @@
 	font-size:35px;
 	color:white;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:480px){
 .menu{
 	color:white;
 	font-size:20px;
@@ -39,6 +44,7 @@
 }
 .header1{
 	display:none;
+	
 }
 }
 @media screen and (min-width:769px){
@@ -48,19 +54,20 @@
 }
 }
 
-.img{
-	width:200px;
-	height:200px;
-	border-radius:50%;
-	border:3px solid #714423;
+
+
+.pro {
+	display:flex;
+	justify-content:center;
+	margin-top:50px;
 }
 
-.section{
+.section {
 	display:flex;
     border-radius:15px;
 	box-shadow: 0px 15px 20px lightgray;
 	border:3px solid #714423;
-	width:800px;
+	max-width:800px;
 	background-color:#D5B195;
 	padding:40px 20px;
 	animation-name:profile;
@@ -68,16 +75,20 @@
 	animation-timing-function:ease-in-out;
 	animation-delay:0;
 	}
+	
+.img{
+	width:200px;
+	border-radius:100px;
+	border:3px solid #714423;
+}
+	
+	
 .content{
 	border:1px solid #714423;
 	margin:8px;
 	padding:8px;
 }
-.pro{
-	display:flex;
-	justify-content:center;
-	margin-top:50px;
-}
+
 @keyframes profile {
 	0%{
 	opacity:0.2;
@@ -94,28 +105,26 @@
 	background-color: #714423;
 	color:#D5B195; 
 	margin-top:10px;
-	margin-left:400px;
 }
 .rag{
 	color:#714423;
 	margin-left:5px;
 }
-.bolt{
+
+.project-container {
 	display:flex;
-}
-.allsub{
-	display:flex;
+	justify-content:center;
 }
 .sub{
 	background-color:#D5B195;
-	margin:70px 60px;
-	height:130px;
+	margin:70px 30px;
+	width:300px;
 	text-align:center;
 	padding:30px  20px;
 	border-radius:20px;
 	box-shadow:2px 2px 5px #D5B195;
 	animation-name:sub;
-border:3px solid  #D5B195;
+    border:3px solid  #D5B195;
 } 
 
 #sub11{
@@ -168,10 +177,14 @@ border:3px solid  #D5B195;
 
 .allsub1{
 	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	
 	
 }
 .sub1{
-	margin:70px 60px;
+	width:300px;
+	margin:30px;
 	text-align:center;
 	padding:30px  20px;
 	border-radius:30px;
@@ -182,6 +195,8 @@ border:3px solid  #D5B195;
 	animation-iteration-count: 1;
 	position:relative;
 	border:3px solid  white;
+	
+	
 }
 
 .sub1:hover{
@@ -232,22 +247,15 @@ animation-duration:2.5s;
 	padding:20px
 }
 
-.formname{
-	width:500px;
+input {
+	width:100%;
 	height:15px;
 	margin-top:10px;
 	padding:10px;
 	border-radius:20px;
 }
-.formemail{
-	width:500px;
-	height:15px;
-	margin-top:10px;
-	padding:10px;
-	border-radius:20px;
-}
+
 .message{
-	width:500px;
 	height:90px;
 	margin-top:10px;
 	padding:10px;
@@ -257,6 +265,10 @@ animation-duration:2.5s;
 	text-align:center;
 	background-color: #D5B195;
 	padding:20px;
+}
+
+.form {
+	max-width:100%;
 }
 .name2{
 	margin-bottom:10px;
@@ -347,3 +359,37 @@ body{
 #last-about{
 	padding:15px;
 }
+
+
+@media screen and (max-width: 480px){
+		.section {
+			flex-direction: column;
+			text-align:center;
+			max-width:450px;
+			margin:20px;
+		}
+		
+		.pic{
+			text-align:center;
+		}
+		.contant{
+			font-size:80px;
+		}
+		.project-container {
+			flex-direction: column;
+			align-items:center;			
+			
+		}
+		.sub {
+			margin:20px;
+		}
+		.allsub1{
+			flex-direction:column;
+			align-items:center;			
+		}
+		
+		.sub1 {
+			margin:20px;
+		}
+		
+		}
