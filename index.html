@@ -15,16 +15,16 @@
 <div  class="header">
 
  <div class="heading"><i><b>Ragini Dubey</b></i></div>
-<header  class="header1">
+ 
+ 
+<nav id="navMenu" class="menu menuu" >
 <a class="a1" href="#">Home</a>
 <a class="a1" href="#">About</a>
 <a  class="a1" href="#">Skills</a>
 <a class="a1"  href="#">Project</a>
 <a class="a1" href="#">Contact</a>
-</header>
-<p  class="menu">
-Menu :
-</p>
+</nav>
+<div class="icon" onclick="toggleMenu()">☰</div>
 </div>
 
 
@@ -149,7 +149,15 @@ placeholder="Enter your message" required> </div>
 	</div>
 	
 	</footer>
-	<div class="last">2025 Ragini Dubey, all right reserved</div>
+	<div class="last">©2025 Ragini Dubey, all right reserved <a href="https://srgeducation.in/">srgeducation</a></div>
 </div>
+
+<script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("menu");
+			console.log("click");
+        }
+ </script>
+
 </body>
 </html>

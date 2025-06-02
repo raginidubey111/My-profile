@@ -36,22 +36,43 @@
 	font-size:35px;
 	color:white;
 }
+.menuu{
+	display:flex;
+	flex-direction:row;
+	gap:10px;
+}
 @media screen and (max-width:480px){
 .menu{
 	color:white;
 	font-size:20px;
-	margin-top:8px;
-}
-.header1{
 	display:none;
 	
+}
+
+.menuu{
+	flex-direction:column;
+	position:absolute;
+	top:50px;
+	right:2px;
+	background-color:#714423;
+	padding:15px 25px;
+	
+}
+
+.icon{
+	color:white;
+	font-size:20px;
+}
+.a1{
+	font-size:15px;
 }
 }
 @media screen and (min-width:769px){
 	
-.menu{
-	display:none;
-}
+	.icon {
+		display:none;
+	}
+	
 }
 
 
@@ -248,7 +269,7 @@ animation-duration:2.5s;
 }
 
 input {
-	width:100%;
+	width:350px;
 	height:15px;
 	margin-top:10px;
 	padding:10px;
@@ -391,5 +412,40 @@ body{
 		.sub1 {
 			margin:20px;
 		}
+		input{
+			max-width:100%;
+		}
+		.btn1{
+			width:150px
+		}
+	@keyframes sub1 {
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+    }
+		.foot{
+			flex-direction:column;
+		}
 		
+		.follow{
+	padding:15px;
+	width:100%;
+    }
+	
+    .about{
+	padding:15px;
+	width:100%;
+   }
+   
+   .quick{
+	padding:15px;
+	width:100%;
+     }
+	 .heading{
+	font-size:25px;
+	
+    }
 		}
