@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Age Checker</title>
+    <style>
+        
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: lightblue;
+        }
+
+        .age-checker-box {
+            background-color:#ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px lightblue;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        h2 {
+            
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input{
+            
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; 
+        }
+
+        input {
+            border-color: #007bff;
+            border: none;
+            box-shadow: 0 0 5px lightblue;
+        }
+
+        button {
+            background-color:  deepskyblue;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        button:hover {
+            background-color: skyblue;
+        }
+
+        .result-message {
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="age-checker-box">
+        <h2>Check Your Age</h2>
+        <div class="input-group">
+            <label>Enter your age:</label>
+            <input type="number" id="ageInput" placeholder="please enter your age...">
+        </div>
+        <button onclick="checkAge()">Check Ability</button>
+        <div id="result" class="result-message"></div>
+    </div>
+
+    <script>
+        
+        function checkAge() {
+            const ageInput = document.getElementById('ageInput');
+            const resultDiv = document.getElementById('result');
+            const age = Number(ageInput.value);
+            ageInput.value = '';
+            if(age>18){
+            document.querySelector("#result").innerText ="yes! you are ✅ eligible";
+            document.querySelector("#result").style.color ="green";
+            document.querySelector("#result").style.backgroundColor ="lightblue";
+            document.querySelector("#result").style.padding ="10px";
+               
+        }
+                else{  
+                document.querySelector("#result").innerText ="oops! sorry you are ❎ not eligible";  
+                document.querySelector("#result").style.color ="red";
+                    document.querySelector("#result").style.backgroundColor ="lightblue";
+            document.querySelector("#result").style.padding ="10px";
+                }
+            
+            }
+
+    </script>
+
+</body>
+</html>
