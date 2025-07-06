@@ -159,6 +159,17 @@
 	animation-duration:10s;
 }
 
+#sub14{
+	animation-duration:12s;
+}
+#sub15{
+	animation-duration:14s;
+}
+#sub16{
+	animation-duration:16s;
+}
+
+
 @keyframes sub {
 	0%{
 		opacity:0;
