@@ -82,13 +82,13 @@ console.log(bill);
  function calculate() {
  if(Number(bill.value) < 100){
  const result = Number(bill.value) * 3;
- document.querySelector('#output').innerText = "Total amount : " + result;
+ document.querySelector('#output').innerText = "Total amount : ₹" + result;
 } else if(Number(bill.value) > 100 && Number(bill.value) < 200 ){
  const result = Number(bill.value) * 5;
- document.querySelector('#output').innerText = "Total amount : " + result;
+ document.querySelector('#output').innerText = "Total amount : ₹" + result;
 } else if(Number(bill.value) > 200){
  const result = Number(bill.value) * 7;
- document.querySelector('#output').innerText = "Total amount : " + result;
+ document.querySelector('#output').innerText = "Total amount : ₹" + result;
   }
       
  }
