@@ -1,10 +1,9 @@
-    
+<!DOCTYPE  HTML>
         
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validity Form (HTML & CSS Only)</title>
+ 
+    <title>Validity Form</title>
     <style>
         body {
             
