@@ -71,29 +71,30 @@
 
 <script>
 
- const mark = document.querySelector("#input");
+  const mark = document.querySelector("#input");
  const btn = document.querySelector("#btn");
 
-console.log(mark);
-
+//console.log(mark);
 
  function calculate() {
- if(Number(mark.value) > 90){
- 
- document.querySelector('#output').innerText = "your Grade is : A ";
-} else if(Number(mark.value) > 89 && Number(mark.value) < 75 ){
- document.querySelector('#output').innerText = "your Grade is : B ";
-}
-else if(Number(mark.value) > 74 && Number(mark.value) < 50 ){
- document.querySelector('#output').innerText = "your Grade is : C ";
-} else if(Number(mark.value) < 50){
- 
- document.querySelector('#output').innerText = "oops your are fail : try next time";
-  }
-      
+  const value = Number(mark.value); 
+
+  if (value > 90) {
+    document.querySelector('#output').innerText = " Congress! your Grade is : A ";
+  } else if (value >= 75 && value <= 89) { 
+    document.querySelector('#output').innerText = " Congress! your Grade is : B ";
+  } else if (value >= 50 && value <= 74) { 
+    document.querySelector('#output').innerText = " it's good! your Grade is : C ";
+  } else if (value >= 1 && value <= 49) {
+    document.querySelector('#output').innerText = "oops your are fail : try next time";
+  } else{ 
+    document.querySelector('#output').innerText = "Please enter marks‼️";
+    }
  }
+
+ btn.addEventListener("click", calculate);
     
-     btn.addEventListener("click", calculate);
+
 </script>
 </body>
 </html>
