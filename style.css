@@ -1,4 +1,4 @@
-ni *{
+*{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -184,7 +184,7 @@ ni *{
 }
 .btn1{
 	
-	
+	padding:5px 10px;
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
