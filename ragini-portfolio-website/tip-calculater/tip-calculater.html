@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator (Static)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FDFCE8;
+        }
+        .calculator {
+            background-color: #E2CEB1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #C7A07A;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 16px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #C7A07A;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            opacity: 0.7;
+        }
+        button:hover {
+            background-color: green;
+        }
+        #alloutput {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            min-height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Tip Calculator</h1>
+                                   
+            <div class="input-group">
+                <label id="billhead">Bill Amount </label>
+                <input type="number" id="bill" placeholder="Enter bill amount">
+            </div>
+            <div class="input-group">
+                <label id="tiphead">Tip Percentage</label>
+                <select id="tip">
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="25">25%</option>
+                    
+                </select>
+            </div>
+            <button id="btn"> calculate </button>
+            <div id="alloutput">
+            <div id="output"> Tip amount :</div>
+            <div id="output1">Total amount :</div></div>
+    </div> 
+
+
+
+<script>
+
+    const bill = document.querySelector("#bill");
+    const tip = document.querySelector("#tip");
+    const btn = document.querySelector("#btn");
+
+     function calculate (){
+     const answer = (Number(bill.value) * Number(tip.value)) / 100;
+     document.querySelector('#output').innerText = "Tip amount : " + answer;
+     const total = answer + Number(bill.value) ;  
+         document.querySelector('#output1').innerText = Total amount : " + total;
+         
+        }
+     btn.addEventListener("click", calculate);
+  
+
+    
+</script>
+</body>
+</html>
