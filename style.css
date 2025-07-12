@@ -1,4 +1,4 @@
- *{
+ni *{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -183,8 +183,8 @@
 	transform:scale(1.1);
 }
 .btn1{
-	margin-top:30px;
-	padding:5px 15px;
+	
+	
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
