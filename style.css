@@ -183,8 +183,8 @@
 	transform:scale(1.1);
 }
 .btn1{
-	
-	padding:10px;
+	margin-bottom: 10px;
+	padding:5px 10px;
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
