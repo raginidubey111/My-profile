@@ -1,0 +1,55 @@
+
+
+#box{
+	width: 30vw;
+	padding: 30px 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px lightslategray;
+	text-align: center;
+	border: 2px solid lightslategray;
+}
+     
+     .container{
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+        margin-top: 200px;
+     }
+#input{
+	padding: 10px;
+    border-radius: 5px;
+}
+#btn{
+	padding: 10px;
+	color: whitesmoke;
+	background-color:blue ;
+    border-radius: 5px;
+}
+#btn:hover{
+	background-color: lightblue;
+	color: black;
+}
+
+.para{
+background-color:lightblue;
+	color: black;
+	display: flex;
+
+	justify-content: space-between;
+	font-size: 20px;
+	padding: 8px;
+	border-radius: 5px;
+    margin:10px 60px;
+    text-align: left;
+    border: 1px solid blue;
+    width: 20vw;
+}
+.btn2{
+   width: 60px;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: lightgreen;
+  
+  
+}
+
