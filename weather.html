@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head><title>Weather-App</title>
+<style>
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:linear-gradient(to right, #6a82fb,#fc80a6);
+	
+}
+
+
+
+#box{
+	display: flex;
+	background-color: whitesmoke;
+	width: 400px;
+	height: 200px;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin-top: 200px;
+	border:2px solid lightblue;
+	box-shadow:  1.5px 3px 1.5px #fc80a6 ;
+}
+input{
+
+	width: 300px;
+	border-radius: 7px;
+padding: 5px;
+
+}
+button{
+width: 100px;
+padding: 5px;
+border-radius: 10px;
+ background-color:lightblue ;
+}
+h1{
+
+	color:  #6a82fb;
+}
+</style>
+</head>
+<body>
+	<div id="all">
+	<div id="box">
+	<h1>⛅ Open Weather App</h1>
+    <input type="text" placeholder="Enter city name" id="input">
+    <button id="btn"> Get Weather</button>
+	</div>
+
+	 <div id="ans">
+	 	<div id="ans1">
+
+	 	<div id="11"></div>
+	 	<div id="12"></div>
+	 	<div id="13"></div>
+	 	<div id="14"></div>
+	 	<div id="15"></div>
+	 	<div id="16"></div>
+	 	<div id="17"></div>
+	 	<div id="18"></div>
+	 </div>	</div>
+</div>
+<script>
+    const ans = document.querySelector('#ans');
+    const ans1 = document.querySelector('#ans1');
+     const btn = document.querySelector('#btn');
+    let input = document.querySelector('#input');
+     
+function weather(){
+	let city = (input.value);
+	console.log(city);
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e49dc9430574131bd058dfe4763773f8`)
+	.then((data)=>{ return data.json()})
+	.then((info)=>{
+    ans.innerText = info.weather[0].id;
+	});
+ }
+   ans.style.backgroundColor = "whitesmoke";
+	ans.style.width = "380px";
+	ans.style.height = "100px";
+	ans.style.border = "2px solid lightblue";
+	ans.style.marginTop = "20px";
+     ans.style.textAlign = "center";
+	ans.style.color =  "#6a82fb";
+	ans.style.padding = "10px";
+    ans.style.borderRadius = "10px";
+   
+
+   btn.addEventListener("click",weather)
+  
+</script>
+</body>
+</html>
