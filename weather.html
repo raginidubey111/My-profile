@@ -54,6 +54,7 @@ h1{
 	</div>
 
 	 <div id="ans">
+	 	<h1>Weather Details</h1>
 	 	<div id="ans1">
 
 	 	<div id="11"></div>
@@ -78,18 +79,28 @@ function weather(){
 	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e49dc9430574131bd058dfe4763773f8`)
 	.then((data)=>{ return data.json()})
 	.then((info)=>{
-    ans.innerText = info.weather[0].id;
+    ans1.innerText = info.main.temp;
 	});
  }
    ans.style.backgroundColor = "whitesmoke";
-	ans.style.width = "380px";
-	ans.style.height = "100px";
+	ans.style.width = "88%";
 	ans.style.border = "2px solid lightblue";
 	ans.style.marginTop = "20px";
      ans.style.textAlign = "center";
 	ans.style.color =  "#6a82fb";
 	ans.style.padding = "10px";
     ans.style.borderRadius = "10px";
+
+
+    ans1.style.backgroundColor = "whitesmoke";
+	ans1.style.width = "92%";
+	ans1.style.height = "100px";
+	ans1.style.border = "2px solid lightblue";
+	ans1.style.marginTop = "20px";
+     ans1.style.textAlign = "center";
+	ans1.style.color =  "#6a82fb";
+	ans1.style.padding = "10px";
+    ans1.style.borderRadius = "10px";
    
 
    btn.addEventListener("click",weather)
