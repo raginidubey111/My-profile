@@ -1,8 +1,4 @@
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-}
+
 
 .main {
 	max-width:100vw;
@@ -134,8 +130,8 @@
 }
 
 .project-container {
- display:flex;
- flex-wrap:wrap;
+	display:flex;
+	flex-wrap:wrap;
 	justify-content:center;
 }
 .sub{
@@ -154,22 +150,11 @@
 	animation-duration:4s;
 }
 #sub12{
-	animation-duration:4s;
+	animation-duration:8s;
 }
 #sub13{
-	animation-duration:4s;
+	animation-duration:10s;
 }
-
-#sub14{
-	animation-duration:4s;
-}
-#sub15{
-	animation-duration:4s;
-}
-#sub16{
-	animation-duration:4s;
-}
-
 
 @keyframes sub {
 	0%{
@@ -184,8 +169,8 @@
 	transform:scale(1.1);
 }
 .btn1{
-	margin-bottom: 10px;
-	padding:2px 8px;
+	margin-top:20px;
+	padding:5px 15px;
 	border-radius:10px;
 	background-color: #714423;
 	color:#D5B195; 
