@@ -147,12 +147,31 @@
 } 
 
 #sub11{
-	animation-duration:4s;
+	animation-duration:2s;
 }
 #sub12{
-	animation-duration:8s;
+	animation-duration:3s;
 }
 #sub13{
+	animation-duration:4s;
+}
+#sub14{
+	animation-duration:5s;
+}
+#sub15{
+	animation-duration:6s;
+}
+#sub16{
+	animation-duration:7s;
+
+}
+#sub17{
+	animation-duration:8s;
+}
+#sub18{
+	animation-duration:9s;
+}
+#sub19{
 	animation-duration:10s;
 }
 
