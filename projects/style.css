@@ -120,6 +120,19 @@
 #sub19{
 	animation-duration:10s;
 }
+#sub20{
+	animation-duration:11s;
+
+}
+#sub21{
+	animation-duration:12s;
+}
+#sub22{
+	animation-duration:13s;
+}
+#sub23{
+	animation-duration:14s;
+}
 
 @keyframes sub {
 	0%{
