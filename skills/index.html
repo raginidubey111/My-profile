@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HTML Editor</title>
+      <style>
+          body{
+              text-align: center ;
+            background-color: #F0F0F0;
+          }
+
+
+          
+          .box{
+           
+         background-color: #F0F0F0;
+         padding: 10px;
+       width: 70%;
+         
+              
+          }
+          #full{
+              text-align: center ;
+              margin: 0 2%;
+             display: flex;
+              flex-direction:column ;
+              align-items: center;
+              gap: 20px;
+             background-color: white;
+              padding: 30px;
+            
+              box-shadow: 4px 4px 4px ghostwhite;
+          }
+
+          #sub1{
+              border: 4px solid #64e3a1;
+            box-shadow: 2.5px 2.4px 2.5px #64e3a1;
+         
+          }
+          #sub2{
+              border: 4px solid #bd0000;
+              box-shadow: 2.5px 2.4px 2.5px #bd0000;
+         
+          }#sub3{
+              
+              border: 4px solid #B185DB;
+         box-shadow: 2.5px 2.4px 2.5px #B185DB;
+          }
+          #sub4{
+              border: 4px solid #FFD35B;
+         box-shadow: 2.5px 2.4px 2.5px #FFD35B;
+          }
+          #sub5{
+              border: 4px solid #A8E8F9;
+         box-shadow: 2.5px 2.4px 2.5px #A8E8F9;
+          }
+          #sub6{
+              border: 4px solid #84791f;
+          box-shadow: 2.5px 2.4px 2.5px #84791f;
+         }
+          #sub7{
+              border: 4px solid #F5A201;
+              box-shadow: 2.5px 2.4px 2.5px #F5A201;
+         }
+  .header{
+    background-color:#A8E8F9;
+    padding:20px 30px;
+    display:flex;
+    justify-content:space-between; 
+  border-top: 3px solid #B185DB;
+  border-bottom:3px solid #B185DB ;
+}
+
+
+.a1{
+    color:black;
+    font-size:23px;
+    text-decoration:none;
+}
+ a:hover{
+    color:#B185DB ;
+}
+
+.header1{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+
+.heading{
+    font-size:35px;
+    color:black;
+}
+.menuu{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+@media screen and (max-width:480px){
+.menu{
+    color:white;
+    font-size:20px;
+    display:none;
+    
+}
+
+.menuu{
+    flex-direction:column;
+    position:absolute;
+    top:50px;
+    right:2px;
+    background-color:#714423;
+    padding:15px 25px;
+    opacity:0.8;
+    
+}
+
+.icon{
+    color:white;
+    font-size:20px;
+}
+.a1{
+    font-size:15px;
+}
+}
+@media screen and (min-width:769px){
+    
+    .icon {
+        display:none;
+    }
+    
+}
+
+.last{
+    text-align:center;
+    background-color:#A8E8F9 ; 
+    padding:20px;
+    color:black;
+    border-top: 3px solid #B185DB;
+}
+
+.box:hover{
+transform:scale(1.1);
+}
+
+        
+      </style>
+   </head>
+   <body>
+
+
+<div  class="header">
+
+ <div class="heading"><i><b>Ragini Dubey</b></i></div>
+ 
+ 
+<nav id="navMenu" class="menu menuu" >
+<a class="a1" href="../index.html">Home</a>
+<a class="a1" href="#">About</a>
+<a  class="a1" href="./index">Skills</a>
+<a class="a1"  href="../projects/index.html">Project</a>
+<a class="a1" href="../contact/index.html">Contact</a>
+</nav>
+<div class="icon" onclick="toggleMenu()">☰</div>
+</div>
+
+
+
+      <section id="full">
+     <h1>MY SKILLS</h1>
+
+          <div id="sub1" class="box">
+          <h2> HTML5</h2>
+           <p> HTML is one of my most important
+               skills which I learned with a lot of
+               hard work and with its help I have
+               structured many great applications.</p>   
+          </div>
+          
+          <div id="sub2" class="box">
+          <h2> CSS3</h2>
+           <p> I have learned CCS very diligently,with its help
+               I have given a very beautiful look to my
+               HTML structure and it is very useful .</p>   
+          </div>
+          <div id="sub3" class="box">
+          <h2> JAVASCRIPT</h2>
+           <p>JavaScript is a programming language which I 
+               learned with great enthusiasm and made
+               many programs using it.</p>   
+          </div>
+          
+          <div id="sub4" class="box">
+          <h2> programming languages</h2>
+           <p> I have knowledge of different languages. 
+               I know <b>C</b>,<b>C++</b>and <b>JavaScript</b>.</p>   
+          </div>
+          
+          <div id="sub5" class="box">
+          <h2>GIT-HUB</h2>
+           <p> GitHub is a web-based platform that provides 
+               hosting for software development and version
+               control using Git. </p>   
+              <p>
+                  My multiple quotes are stored in github.
+              </p>
+          </div>
+          <div id="sub6" class="box">
+          <h2>REACT</h2>
+           <p> Component base development with hooks and
+               state management.</p>   
+          </div>
+          
+          
+          
+          <div id="sub7" class="box">
+          <h2> VS CODE</h2>
+           <p> Efficient code editing with extensions
+               and debugging tools.</p>   
+          </div>
+          
+      </section>
+ 
+ <div class="last">©2025 Ragini Dubey, all right reserved <a href="https://srgeducation.in/">srgeducation</a></div>
+</div>
+      <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("menu");
+            console.log("click");
+        }
+ </script>
+   </body>
+</html>
